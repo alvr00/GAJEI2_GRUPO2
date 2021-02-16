@@ -8,6 +8,7 @@ public class ej : MonoBehaviour
     void Start()
     {
         Debug.Log("Perrroooooooooo");
+        Debug.Log("klok");
     }
 
     // Update is called once per frame
