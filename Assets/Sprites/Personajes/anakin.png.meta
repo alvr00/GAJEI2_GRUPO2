@@ -1,0 +1,1908 @@
+fileFormatVersion: 2
+guid: 4707895e66bbec4499a6f7c6b172b1cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8753276185727533636
+    second: anakin_0
+  - first:
+      213: -8138457827207762598
+    second: anakin_1
+  - first:
+      213: -6415228117850024012
+    second: anakin_2
+  - first:
+      213: 7503099849393366408
+    second: anakin_3
+  - first:
+      213: 1421016506394434250
+    second: anakin_4
+  - first:
+      213: -8562452730524072520
+    second: anakin_5
+  - first:
+      213: -6679741638378210786
+    second: anakin_6
+  - first:
+      213: -7023684628696529493
+    second: anakin_7
+  - first:
+      213: 4921930995446753026
+    second: anakin_8
+  - first:
+      213: 7667452167522713109
+    second: anakin_9
+  - first:
+      213: -7250488332943833513
+    second: anakin_10
+  - first:
+      213: -2970993925298330758
+    second: anakin_11
+  - first:
+      213: -4467316210193059746
+    second: anakin_12
+  - first:
+      213: -3329685063538650286
+    second: anakin_13
+  - first:
+      213: -1552715227859787460
+    second: anakin_14
+  - first:
+      213: 1363355329374522171
+    second: anakin_15
+  - first:
+      213: -5514799304599109606
+    second: anakin_16
+  - first:
+      213: -986819792796533501
+    second: anakin_17
+  - first:
+      213: 8070785950397384204
+    second: anakin_18
+  - first:
+      213: -5809274601956171792
+    second: anakin_19
+  - first:
+      213: 7772698432697938939
+    second: anakin_20
+  - first:
+      213: 6244692864498176587
+    second: anakin_21
+  - first:
+      213: 3922240655847123666
+    second: anakin_22
+  - first:
+      213: -7709522137499802536
+    second: anakin_23
+  - first:
+      213: 1100568077973030264
+    second: anakin_24
+  - first:
+      213: -7238731288883368670
+    second: anakin_25
+  - first:
+      213: 6156721133852591828
+    second: anakin_26
+  - first:
+      213: -3972678796380830411
+    second: anakin_27
+  - first:
+      213: 5267580873767484098
+    second: anakin_28
+  - first:
+      213: 1029999379113250089
+    second: anakin_29
+  - first:
+      213: 2196931329313440090
+    second: anakin_30
+  - first:
+      213: 4608054051106761275
+    second: anakin_31
+  - first:
+      213: -2512382571358059692
+    second: anakin_32
+  - first:
+      213: -6297370240653555919
+    second: anakin_33
+  - first:
+      213: 2663221089931870124
+    second: anakin_34
+  - first:
+      213: 3658485175216212780
+    second: anakin_35
+  - first:
+      213: -2860242065183944185
+    second: anakin_36
+  - first:
+      213: -633640944919333350
+    second: anakin_37
+  - first:
+      213: -507094249474056890
+    second: anakin_38
+  - first:
+      213: -8723590919065100954
+    second: anakin_39
+  - first:
+      213: -1779599368865149294
+    second: anakin_40
+  - first:
+      213: 5729956709296025625
+    second: anakin_41
+  - first:
+      213: -219634171695653546
+    second: anakin_42
+  - first:
+      213: 9091968687386800630
+    second: anakin_43
+  - first:
+      213: 2781869481256190096
+    second: anakin_44
+  - first:
+      213: 8932393775079104071
+    second: anakin_45
+  - first:
+      213: -415234295196937282
+    second: anakin_46
+  - first:
+      213: -7372325274041123768
+    second: anakin_47
+  - first:
+      213: -4484604949676418605
+    second: anakin_48
+  - first:
+      213: 3359979416888343747
+    second: anakin_49
+  - first:
+      213: -2554773749818084675
+    second: anakin_50
+  - first:
+      213: -453836409456506622
+    second: anakin_51
+  - first:
+      213: 9095104089712646462
+    second: anakin_52
+  - first:
+      213: -6555378331684763229
+    second: anakin_53
+  - first:
+      213: 4271751219160991739
+    second: anakin_54
+  - first:
+      213: -2836847069418896437
+    second: anakin_55
+  - first:
+      213: -8105677472495471145
+    second: anakin_56
+  - first:
+      213: 7658738248909471225
+    second: anakin_57
+  - first:
+      213: -6622214079367293976
+    second: anakin_58
+  - first:
+      213: 7466061887349032709
+    second: anakin_59
+  - first:
+      213: 858970910002307127
+    second: anakin_60
+  - first:
+      213: 7629565492268739930
+    second: anakin_61
+  - first:
+      213: -3863430828996396276
+    second: anakin_62
+  - first:
+      213: 1398992028191688507
+    second: anakin_63
+  - first:
+      213: -3011294317559194719
+    second: anakin_64
+  - first:
+      213: 6388062849210198868
+    second: anakin_65
+  - first:
+      213: 212753827973902360
+    second: anakin_66
+  - first:
+      213: 8715251608247628428
+    second: anakin_67
+  - first:
+      213: 8767528309427873417
+    second: anakin_68
+  - first:
+      213: -567112344150462624
+    second: anakin_69
+  - first:
+      213: -5042054513063437115
+    second: anakin_70
+  - first:
+      213: 4027447515084734643
+    second: anakin_71
+  - first:
+      213: -5689353986701034086
+    second: anakin_72
+  - first:
+      213: 8540970768345221265
+    second: anakin_73
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anakin_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1387
+        width: 33
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4420d276052e97970800000000000000
+      internalID: 8753276185727533636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1395
+        width: 124
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5da8cdb9b36e0f80800000000000000
+      internalID: -8138457827207762598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1389
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b79372240888f6a0800000000000000
+      internalID: -6415228117850024012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1393
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885e0655f8d502860800000000000000
+      internalID: 7503099849393366408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1331
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca5b93dbf678b310800000000000000
+      internalID: 1421016506394434250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1331
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b50a0f7b9e0c2980800000000000000
+      internalID: -8562452730524072520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1380
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ab415ee5acc43a0800000000000000
+      internalID: -6679741638378210786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1330
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba50c241b0cd68e90800000000000000
+      internalID: -7023684628696529493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1261
+        width: 37
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207a690b9263e4440800000000000000
+      internalID: 4921930995446753026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1330
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e7d795f13486a60800000000000000
+      internalID: 7667452167522713109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1259
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756c4c2a647116b90800000000000000
+      internalID: -7250488332943833513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1272
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73efb414c8e4c6d0800000000000000
+      internalID: -2970993925298330758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1275
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5039106397e002c0800000000000000
+      internalID: -4467316210193059746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_13
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1277
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253dadd73159ac1d0800000000000000
+      internalID: -3329685063538650286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1175
+        width: 23
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31e3161ab5a37ae0800000000000000
+      internalID: -1552715227859787460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1173
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b010ed27c9be210800000000000000
+      internalID: 1363355329374522171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_16
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1177
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a108cc9404f7773b0800000000000000
+      internalID: -5514799304599109606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_17
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1110
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db90970ac1e42f0800000000000000
+      internalID: -986819792796533501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_18
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1111
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0646af9f01310070800000000000000
+      internalID: 8070785950397384204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1109
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff14b3478f416fa0800000000000000
+      internalID: -5809274601956171792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1042
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf332330b0c2edb60800000000000000
+      internalID: 7772698432697938939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1042
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4294df031b99a650800000000000000
+      internalID: 6244692864498176587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_22
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1044
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daec5778199e6630800000000000000
+      internalID: 3922240655847123666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1046
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85460567676420590800000000000000
+      internalID: -7709522137499802536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_24
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1047
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87587baf5d0064f00800000000000000
+      internalID: 1100568077973030264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1072
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22de995ce3cda8b90800000000000000
+      internalID: -7238731288883368670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 972
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d68c646041117550800000000000000
+      internalID: 6156721133852591828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_27
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 971
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5358efecea53ed8c0800000000000000
+      internalID: -3972678796380830411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 971
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca7d8655e43a1940800000000000000
+      internalID: 5267580873767484098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 972
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d0be66afa4b4e00800000000000000
+      internalID: 1029999379113250089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 973
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5187a777611d7e10800000000000000
+      internalID: 2196931329313440090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 924
+        width: 77
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3aa406beb813ff30800000000000000
+      internalID: 4608054051106761275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_32
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 922
+        width: 76
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453025ecc59322dd0800000000000000
+      internalID: -2512382571358059692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_33
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 922
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1378aba812f3b98a0800000000000000
+      internalID: -6297370240653555919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_34
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 937
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafb7bf8879a5f420800000000000000
+      internalID: 2663221089931870124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_35
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 842
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b8bc422ec85c230800000000000000
+      internalID: 3658485175216212780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_36
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 843
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702d415fef06e48d0800000000000000
+      internalID: -2860242065183944185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_37
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 843
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16b0f2faead437f0800000000000000
+      internalID: -633640944919333350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_38
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 840
+        width: 52
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d9470877076f8f0800000000000000
+      internalID: -507094249474056890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_39
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 853
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d1d4757449fe680800000000000000
+      internalID: -8723590919065100954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_40
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 787
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e88408dc79d47e0800000000000000
+      internalID: -1779599368865149294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_41
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 787
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910b4fbb445e48f40800000000000000
+      internalID: 5729956709296025625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 707
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d1b8f62e3b3fcf0800000000000000
+      internalID: -219634171695653546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_43
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 712
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f13aa099592d2e70800000000000000
+      internalID: 9091968687386800630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_44
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 710
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09086c1ed8f2b9620800000000000000
+      internalID: 2781869481256190096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_45
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 729
+        width: 10
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e108500dc36fb70800000000000000
+      internalID: 8932393775079104071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_46
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 635
+        width: 90
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb31a38cb9acc3af0800000000000000
+      internalID: -415234295196937282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_47
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 637
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cf428393d30b990800000000000000
+      internalID: -7372325274041123768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_48
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 636
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d914980f8b73c1c0800000000000000
+      internalID: -4484604949676418605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_49
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 564
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccf04c4a7b01ae20800000000000000
+      internalID: 3359979416888343747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_50
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 603
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2b9907fce9b8cd0800000000000000
+      internalID: -2554773749818084675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_51
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 594
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209c43ca036a3b9f0800000000000000
+      internalID: -453836409456506622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_52
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 546
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39568e4bfc483e70800000000000000
+      internalID: 9095104089712646462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_53
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 552
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a903a3a32e9605a0800000000000000
+      internalID: -6555378331684763229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_54
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 499
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7cee2e91f484b30800000000000000
+      internalID: 4271751219160991739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_55
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 549
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3cd21ee9e71a8d0800000000000000
+      internalID: -2836847069418896437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_56
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 489
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57504d849d28f80800000000000000
+      internalID: -8105677472495471145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_57
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 501
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd32f11cdd494a60800000000000000
+      internalID: 7658738248909471225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_58
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 470
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3d8bc716b2914a0800000000000000
+      internalID: -6622214079367293976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_59
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 476
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507858acab7cc9760800000000000000
+      internalID: 7466061887349032709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_60
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 473
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730e41bdd7dabeb00800000000000000
+      internalID: 858970910002307127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_61
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 474
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5da14d5469a1e960800000000000000
+      internalID: 7629565492268739930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_62
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 422
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b706f5126526ac0800000000000000
+      internalID: -3863430828996396276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_63
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 423
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3708f366d73a6310800000000000000
+      internalID: 1398992028191688507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_64
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 468
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab5bbfc5cbb536d0800000000000000
+      internalID: -3011294317559194719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 424
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b2b02e055f6a850800000000000000
+      internalID: 6388062849210198868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_66
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 469
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8103df4ba7ad3f200800000000000000
+      internalID: 212753827973902360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_67
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 367
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8270cd892bc2f870800000000000000
+      internalID: 8715251608247628428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_68
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 405
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98621a98b848ca970800000000000000
+      internalID: 8767528309427873417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_69
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 368
+        width: 49
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f2c23e3563128f0800000000000000
+      internalID: -567112344150462624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_70
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 370
+        width: 54
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccd2b26226070ab0800000000000000
+      internalID: -5042054513063437115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_71
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 224
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0c7283d2e54e730800000000000000
+      internalID: 4027447515084734643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_72
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 213
+        width: 48
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d7b3d41ba5b01b0800000000000000
+      internalID: -5689353986701034086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anakin_73
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198463c69af978670800000000000000
+      internalID: 8540970768345221265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
