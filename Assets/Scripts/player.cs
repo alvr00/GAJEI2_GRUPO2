@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    float velocidad = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +14,8 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xPos = Input.GetAxis("Horizontal");
-        float yPos = Input.GetAxis("Vertical");
-        transform.position = new Vector3(xPos, yPos, transform.position.z);
+        float xPos = Input.GetAxisRaw("Horizontal");
+        float yPos = Input.GetAxisRaw("Vertical");
+        transform.Translate(new Vector3(xPos, yPos,0).normalized * velocidad * Time.deltaTime );
     }
 }
