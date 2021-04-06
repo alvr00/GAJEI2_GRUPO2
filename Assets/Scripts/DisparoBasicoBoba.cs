@@ -16,6 +16,6 @@ public class DisparoBasicoBoba : MonoBehaviour
     void Update()
     {
         
-        transform.Translate(direccionDisparo.normalized * 4 * Time.deltaTime);
+        transform.Translate(direccionDisparo.normalized * 8 * Time.deltaTime);
     }
 }
