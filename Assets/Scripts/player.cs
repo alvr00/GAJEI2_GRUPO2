@@ -17,8 +17,8 @@ public class player : MonoBehaviour
     void Update()
     {
         float xPos = Input.GetAxisRaw("Horizontal");
-        float yPos = Input.GetAxisRaw("Vertical");
-        transform.Translate(new Vector3(xPos, yPos, 0).normalized * velocidad * Time.deltaTime);
+        
+        transform.Translate(new Vector3(xPos, 0, 0).normalized * velocidad * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
