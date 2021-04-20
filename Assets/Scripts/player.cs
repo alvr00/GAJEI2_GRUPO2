@@ -6,6 +6,9 @@ public class player : MonoBehaviour
 {
     float velocidad = 8f;
     [SerializeField] GameObject misilPrefab;
+    [SerializeField] Animator anim;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,10 @@ public class player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+            anim.SetTrigger("jump");
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
