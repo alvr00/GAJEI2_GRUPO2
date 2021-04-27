@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoviimientoEnemTierra : MonoBehaviour
+public class EneBasic : MonoBehaviour
 {
     //Rigidbody dinámico con gravedad.
     Rigidbody2D rb;

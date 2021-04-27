@@ -7,6 +7,7 @@ public class player : MonoBehaviour
     float velocidad = 8f;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
+    bool Saltando = false;
     
     
 
@@ -23,13 +24,15 @@ public class player : MonoBehaviour
         
         transform.Translate(new Vector3(xPos, 0, 0).normalized * velocidad * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !Saltando)
         {
 
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
             anim.SetTrigger("jump");
+            Saltando = true;
 
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,5 +40,10 @@ public class player : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("escenario"))
+        {
+            Saltando = false;
+        }
     }
+
 }
