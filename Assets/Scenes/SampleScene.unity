@@ -416,7 +416,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 15
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -436,6 +436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misilPrefab: {fileID: 5287421599701592677, guid: 2cdd26e515be07c44800e5fef7bcb1d2, type: 3}
   anim: {fileID: 1121387165}
+  escenario:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &1121387165
 Animator:
   serializedVersion: 3
