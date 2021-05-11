@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1484957908207346862}
   m_Layer: 0
   m_Name: disparoBasicoBoba
-  m_TagString: misilBoba1
+  m_TagString: Disparo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -25,6 +25,8 @@ public class PlayerGirl : MonoBehaviour
 
         transform.Translate(new Vector3(xPos, 0, 0).normalized * velocidad * Time.deltaTime);
 
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
@@ -34,7 +36,17 @@ public class PlayerGirl : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            LanzarSable();
+            anim.SetTrigger("lanzarEspada");
+        }
+        if (Input.GetKey(KeyCode.R))
+        {
+            anim.SetBool("bloqueando", true);
+
+
+        }
+        else if (Input.GetKeyUp(KeyCode.R))
+        {
+            anim.SetBool("bloqueando", false);
         }
 
     }
@@ -45,9 +57,18 @@ public class PlayerGirl : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("Disparo"))
+        {
+            if(anim.GetBool("bloqueando"))
+            {
+                Destroy(collision.gameObject);
+
+            }
+        }
     }
     void LanzarSable()
     {
         Instantiate(sableVolandoPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
     }
 }
+

@@ -20,7 +20,7 @@ public class Sable : MonoBehaviour
         if(transform.position != objetivo)
         {
 
-            transform.position = Vector3.MoveTowards(transform.position, objetivo, 10 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, objetivo, 12 * Time.deltaTime);
         }
         else
         {
