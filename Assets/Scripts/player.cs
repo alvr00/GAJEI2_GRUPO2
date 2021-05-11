@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class player : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class player : MonoBehaviour
         {
             sR.flipX = false;
         }
-        rb.velocity = new Vector2(h, rb.velocity.y).normalized * velocidad;
+        rb.velocity = new Vector2(h * velocidad, rb.velocity.y);
         anim.SetInteger("h", h);
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -38,7 +39,7 @@ public class player : MonoBehaviour
             if (CheckGround().Length > 0)
             {
                 Debug.Log("fdsadsa");
-                rb.AddForce(Vector2.up * 3, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
                 anim.SetBool("jumping", true);
             }
         }
@@ -46,6 +47,11 @@ public class player : MonoBehaviour
         if(CheckGround().Length > 0 && rb.velocity.y < 0)
         {
             anim.SetBool("jumping", false);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("atacar" + Random.Range(0, 2));
         }
     }
     private void OnDrawGizmos()
