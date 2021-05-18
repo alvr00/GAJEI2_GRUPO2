@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovEnemigo : MonoBehaviour
+public class EnemBoba : MonoBehaviour
 {
     GameObject Player;
     bool puedeAtq;

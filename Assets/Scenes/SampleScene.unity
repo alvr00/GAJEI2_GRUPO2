@@ -416,7 +416,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -436,6 +436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misilPrefab: {fileID: 5287421599701592677, guid: 2cdd26e515be07c44800e5fef7bcb1d2, type: 3}
   anim: {fileID: 1121387165}
+  escenario:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &1121387165
 Animator:
   serializedVersion: 3
@@ -533,7 +536,7 @@ GameObject:
   - component: {fileID: 1347147667}
   m_Layer: 0
   m_Name: Plataforma
-  m_TagString: Untagged
+  m_TagString: escenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,11 +613,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347147666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.31, y: -0.0442, z: 0}
+  m_LocalPosition: {x: -3.68, y: -0.0442, z: 0}
   m_LocalScale: {x: 5.187665, y: 1.0343571, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478717667
 GameObject:

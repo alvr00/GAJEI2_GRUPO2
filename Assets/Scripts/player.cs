@@ -1,35 +1,67 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class player : MonoBehaviour
 {
     float velocidad = 8f;
+    int h;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
-    
-    
+    [SerializeField] LayerMask escenario;
+    SpriteRenderer sR;
+    Rigidbody2D rb;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        sR = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float xPos = Input.GetAxisRaw("Horizontal");
-        
-        transform.Translate(new Vector3(xPos, 0, 0).normalized * velocidad * Time.deltaTime);
+        h = (int)Input.GetAxisRaw("Horizontal");
+        if(h == -1)
+        {
+            sR.flipX = true;
+        }
+        else if(h == 1)
+        {
+            sR.flipX = false;
+        }
+        rb.velocity = new Vector2(h * velocidad, rb.velocity.y);
+        anim.SetInteger("h", h);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
-            anim.SetTrigger("jump");
-
+            if (CheckGround().Length > 0)
+            {
+                Debug.Log("fdsadsa");
+                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
+                anim.SetBool("jumping", true);
+            }
         }
+
+        if(CheckGround().Length > 0 && rb.velocity.y < 0)
+        {
+            anim.SetBool("jumping", false);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("atacar" + Random.Range(0, 2));
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f);
+    }
+    Collider2D[] CheckGround()
+    {
+        Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f, escenario);
+        return colls;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,5 +69,7 @@ public class player : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+
     }
+
 }
