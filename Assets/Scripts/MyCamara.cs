@@ -19,6 +19,6 @@ public class MyCamara : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = player.transform.position + new Vector3(0, 0, -10);
+        transform.position = player.transform.position + new Vector3(0, 3f, -10f);
     }
 }

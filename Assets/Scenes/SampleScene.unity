@@ -948,6 +948,9 @@ MonoBehaviour:
   misilPrefab: {fileID: 5287421599701592677, guid: 2cdd26e515be07c44800e5fef7bcb1d2, type: 3}
   anim: {fileID: 1721243085}
   sableVolandoPrefab: {fileID: 5469696997676847653, guid: 9db99a91c1a77114a9b1aeeb666e4265, type: 3}
+  escenario:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!60 &1721243089
 PolygonCollider2D:
   m_ObjectHideFlags: 0

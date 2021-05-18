@@ -6,37 +6,71 @@ public class PlayerGirl : MonoBehaviour
 {
 
     float velocidad = 8f;
+    int h;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
     [SerializeField] GameObject sableVolandoPrefab;
+    [SerializeField] LayerMask escenario;
+    SpriteRenderer sR;
+    Rigidbody2D rb;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        sR = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float xPos = Input.GetAxisRaw("Horizontal");
+        h = (int)Input.GetAxisRaw("Horizontal");
+        if (h == -1)
+        {
+            sR.flipX = true;
+        }
+        else if (h == 1)
+        {
+            sR.flipX = false;
+        }
+        rb.velocity = new Vector2(h * velocidad, rb.velocity.y);
+        anim.SetInteger("h", h);
 
-        transform.Translate(new Vector3(xPos, 0, 0).normalized * velocidad * Time.deltaTime);
+        
 
 
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse);
-            anim.SetTrigger("saltar");
+            if (CheckGround().Length > 0)
+            {
+                Debug.Log("fdsadsa");
+                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
+                anim.SetBool("saltar", true);
+            }
+           
+
 
         }
+        if (CheckGround().Length > 0 && rb.velocity.y < 0)
+        {
+            anim.SetBool("saltar", false);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("atacar" );
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
-            anim.SetTrigger("lanzarEspada");
+           
+
+              anim.SetTrigger("lanzarEspada");
+           
         }
         if (Input.GetKey(KeyCode.R))
         {
@@ -49,6 +83,15 @@ public class PlayerGirl : MonoBehaviour
             anim.SetBool("bloqueando", false);
         }
 
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f);
+    }
+    Collider2D[] CheckGround()
+    {
+        Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f, escenario);
+        return colls;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -68,7 +111,18 @@ public class PlayerGirl : MonoBehaviour
     }
     void LanzarSable()
     {
-        Instantiate(sableVolandoPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
+        if (!sR.flipX)
+        {
+            GameObject sableCopia = Instantiate(sableVolandoPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
+            sableCopia.GetComponent<Sable>().objetivo = transform.position + new Vector3(5, 0, 0);
+
+        }
+        else if (sR.flipX)
+        {
+            GameObject sableCopia = Instantiate(sableVolandoPrefab, transform.position + new Vector3(-1f, 0, 0), Quaternion.identity);
+            sableCopia.GetComponent<Sable>().objetivo = transform.position + new Vector3(-5, 0, 0);
+
+        }
     }
 }
 

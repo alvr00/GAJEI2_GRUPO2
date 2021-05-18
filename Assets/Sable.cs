@@ -5,13 +5,12 @@ using UnityEngine;
 public class Sable : MonoBehaviour
 {
 
-    Vector3 objetivo;
+    public Vector3 objetivo;
     GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        objetivo = player.transform.position + new Vector3(5, 0, 0);
     }
 
     // Update is called once per frame
