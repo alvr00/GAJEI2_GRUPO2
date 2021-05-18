@@ -9,6 +9,7 @@ public class player : MonoBehaviour
     int h;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
+    [SerializeField] GameObject sableVolandoPrefab;
     [SerializeField] LayerMask escenario;
     SpriteRenderer sR;
     Rigidbody2D rb;
@@ -53,6 +54,7 @@ public class player : MonoBehaviour
         {
             anim.SetTrigger("atacar" + Random.Range(0, 2));
         }
+
     }
     private void OnDrawGizmos()
     {
