@@ -26,7 +26,7 @@ public class PlayerGirl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        h = (int)Input.GetAxisRaw("Horizontal");
+        h = (int)Input.GetAxisRaw("Horizontal"); //-1,011
         if (h == -1)
         {
             sR.flipX = true;
@@ -47,17 +47,23 @@ public class PlayerGirl : MonoBehaviour
 
             if (CheckGround().Length > 0)
             {
-                Debug.Log("fdsadsa");
                 rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
-                anim.SetBool("saltar", true);
+                anim.SetTrigger("salto");
             }
            
 
 
         }
-        if (CheckGround().Length > 0 && rb.velocity.y < 0)
+        if(rb.velocity.y < 0) //Estoy cayendo SIN tocar suelo.
         {
-            anim.SetBool("saltar", false);
+            if(CheckGround().Length == 0)
+            {
+                anim.SetBool("cayendo", true);
+            }
+            else
+            {
+                anim.SetBool("cayendo", false);
+            }
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -67,18 +73,28 @@ public class PlayerGirl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-           
-
+          
               anim.SetTrigger("lanzarEspada");
            
         }
-        if (Input.GetKey(KeyCode.R))
+        if (h != 0 && Input.GetKey(KeyCode.LeftShift))
+        {
+            anim.SetBool("velocidad", true);
+            velocidad = 20f;
+        }
+        if (h==0)
+        {
+            anim.SetBool("velocidad", false);
+            velocidad = 8f;
+        }
+       
+        if (Input.GetKey(KeyCode.F))
         {
             anim.SetBool("bloqueando", true);
 
 
         }
-        else if (Input.GetKeyUp(KeyCode.R))
+        else if (Input.GetKeyUp(KeyCode.F))
         {
             anim.SetBool("bloqueando", false);
         }
