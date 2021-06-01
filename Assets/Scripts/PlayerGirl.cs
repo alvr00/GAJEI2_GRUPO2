@@ -21,6 +21,8 @@ public class PlayerGirl : MonoBehaviour
     {
         sR = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
