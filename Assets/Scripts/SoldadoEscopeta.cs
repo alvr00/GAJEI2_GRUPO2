@@ -22,7 +22,7 @@ public class SoldadoEscopeta : MonoBehaviour
     void Update()
     {
         float distAPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (distAPlayer >= 5 && distAPlayer < 9) //Rango de visión
+        if (distAPlayer >= 3 && distAPlayer < 9) //Rango de visión
         {
             StopAllCoroutines();
             estaatacando = false;
@@ -42,15 +42,16 @@ public class SoldadoEscopeta : MonoBehaviour
             }
         }
 
-        else if (distAPlayer > 2 && distAPlayer < 5) //Rango de ataque
+        else if (distAPlayer > 1 && distAPlayer < 3) //Rango de ataque
         {
             anims.SetBool("andando", false);
-            if (!estaatacando)
+            estaatacando = true;
+            if (estaatacando)
             {
                 StartCoroutine(Disparo());
             }
         }
-        else if (distAPlayer <= 2)
+        else if (distAPlayer <=  1)
         {
             StopAllCoroutines();
             estaatacando = false;
