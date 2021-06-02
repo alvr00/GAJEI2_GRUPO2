@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerGirl : MonoBehaviour
 {
 
     float velocidad = 8f;
     int h;
+    int vidas = 100;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
     [SerializeField] GameObject sableVolandoPrefab;
     [SerializeField] LayerMask escenario;
+    [SerializeField] Image[] vida;
     SpriteRenderer sR;
     Rigidbody2D rb;
+
 
 
 
@@ -21,6 +25,7 @@ public class PlayerGirl : MonoBehaviour
     {
         sR = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        
 
         DontDestroyOnLoad(gameObject);
     }
@@ -101,6 +106,11 @@ public class PlayerGirl : MonoBehaviour
             anim.SetBool("bloqueando", false);
         }
 
+        if (vidas == 100)
+        {
+
+        }
+
     }
     private void OnDrawGizmos()
     {
@@ -117,12 +127,15 @@ public class PlayerGirl : MonoBehaviour
         if (collision.gameObject.CompareTag("misilBoba1"))
         {
             Destroy(collision.gameObject);
+            vidas -= 25;
+            
         }
         if (collision.gameObject.CompareTag("Disparo"))
         {
             if(anim.GetBool("bloqueando"))
             {
                 Destroy(collision.gameObject);
+                vidas -= 10;
 
             }
         }

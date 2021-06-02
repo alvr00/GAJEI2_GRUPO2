@@ -13,7 +13,11 @@ public class Capsule : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        miGestorDeNiveles.CargarSiguienteNivel();
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          miGestorDeNiveles.CargarSiguienteNivel();
+
+        }
     }
     // Update is called once per frame
     void Update()
