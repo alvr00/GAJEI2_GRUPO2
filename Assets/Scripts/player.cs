@@ -38,8 +38,7 @@ public class player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (CheckGround().Length > 0)
-            {
-                Debug.Log("fdsadsa");
+            {               
                 rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
                 anim.SetBool("jumping", true);
             }
