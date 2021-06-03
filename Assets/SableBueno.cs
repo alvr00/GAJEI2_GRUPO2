@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sable : MonoBehaviour
+public class SableBueno : MonoBehaviour
 {
 
     public Vector3 objetivo;
