@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5469696997676847654}
   - component: {fileID: 5469696997676847655}
   - component: {fileID: 5469696997676847652}
-  - component: {fileID: 602995391021531513}
   - component: {fileID: 3341305212024071000}
   m_Layer: 0
   m_Name: SableVolando
@@ -104,18 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &602995391021531513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5469696997676847653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7405f01278fe9849b04ed5b09ebe394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &3341305212024071000
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
