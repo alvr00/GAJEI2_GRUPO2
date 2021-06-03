@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject playerGirlPrefab;
-    [SerializeField] GameObject playerViejo;
+    //[SerializeField] GameObject playerGirlPrefab;
+    //[SerializeField] GameObject playerViejo;
+    [HideInInspector] public GameObject playerPrefab;
     //Patrón Singleton
     public static GameManager gM;
     private void Awake()
@@ -32,23 +33,30 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        
+    }
+
+    void EscenaCargada(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.buildIndex == 1)
         {
-            SceneManager.LoadScene("Menu");
+            Instantiate(playerPrefab, new Vector3(-7.53f, -3f, 0), Quaternion.identity);
+        }
+        if (scene.name.Equals("Nivel2"))
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = new Vector3(-5.38f,-3.10f,0);
         }
     }
 
-    void EscenaCargada(Scene name, LoadSceneMode mode)
-    {
-        //if(name == "Menu")
-        //{
-
-        //}
-        //else if(name == "Nivel2")
-        //{
-        //    G
-        //}
-    }
+    //public void BoySelected()
+    //{
+    //    player = playerViejo;
+    //}
+    //public void GirlSelected()
+    //{
+    //    player = playerGirlPrefab;
+    //}
 
   
 }

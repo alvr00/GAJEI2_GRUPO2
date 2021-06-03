@@ -145,13 +145,13 @@ public class PlayerGirl : MonoBehaviour
         if (!sR.flipX)
         {
             GameObject sableCopia = Instantiate(sableVolandoPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-            sableCopia.GetComponent<Sable>().objetivo = transform.position + new Vector3(5, 0, 0);
+            sableCopia.GetComponent<SableBueno>().objetivo = transform.position + new Vector3(5, 0, 0);
 
         }
         else if (sR.flipX)
         {
             GameObject sableCopia = Instantiate(sableVolandoPrefab, transform.position + new Vector3(-1f, 0, 0), Quaternion.identity);
-            sableCopia.GetComponent<Sable>().objetivo = transform.position + new Vector3(-5, 0, 0);
+            sableCopia.GetComponent<SableBueno>().objetivo = transform.position + new Vector3(-5, 0, 0);
 
         }
     }

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MyCamaraBuena : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    GameObject player;
+    
     private void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     private void Update()
     {

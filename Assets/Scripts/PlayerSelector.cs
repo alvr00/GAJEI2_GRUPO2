@@ -14,7 +14,7 @@ public class PlayerSelector : MonoBehaviour
 
     public void Selection(int index) 
     {
-        PlayerStorage.playerPrefab = this.prefabs[index];
+        GameManager.gM.playerPrefab = this.prefabs[index];
 
     }
     // Update is called once per frame
