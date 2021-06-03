@@ -5,20 +5,17 @@ using UnityEngine;
 public class MyCamara : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
     }
-
     private void LateUpdate()
     {
-        transform.position = player.transform.position + new Vector3(0, 0, -10);
+        transform.position = player.transform.position + new Vector3(0, 3f, -10);
+        float yPos = Mathf.Clamp(transform.position.y, 0.67f, 1.85f);
+        transform.position = new Vector3(transform.position.x, yPos, -10);
     }
 }
