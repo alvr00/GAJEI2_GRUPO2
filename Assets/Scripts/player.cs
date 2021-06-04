@@ -40,7 +40,7 @@ public class player : MonoBehaviour
         {
             if (CheckGround().Length > 0)
             {               
-                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * 17, ForceMode2D.Impulse);
                 anim.SetBool("jumping", true);
             }
         }

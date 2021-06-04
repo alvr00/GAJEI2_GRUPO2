@@ -9,6 +9,7 @@ public class SoldadoEscopeta : MonoBehaviour
     SpriteRenderer sR;
     Animator anims;
     Rigidbody2D rb;
+    [SerializeField] LayerMask capaPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +68,7 @@ public class SoldadoEscopeta : MonoBehaviour
             while (true)
             {
                 anims.SetTrigger("disparo");
-                //Raycast
+                RaycastHit2D hit = 
                 yield return new WaitForSeconds(2f);
             }
 
