@@ -7,6 +7,7 @@ TagManager:
   - misilBoba1
   - Disparo
   - escenario
+  - ZonaMuerte
   layers:
   - Default
   - TransparentFX
