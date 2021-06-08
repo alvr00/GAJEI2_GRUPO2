@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OndaBoba : MonoBehaviour
+public class MIsilBoba : MonoBehaviour
 {
-  
-    [HideInInspector] public Vector3 direccionOnda;
+    [HideInInspector] public Vector3 direccionMisil;
     // Start is called before the first frame update
     void Start()
     {
-        Boba scr = gameObject.GetComponent<Boba>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(direccionOnda.normalized * 10 * Time.deltaTime);
+        transform.Translate(direccionMisil.normalized * 10 * Time.deltaTime, Space.World);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

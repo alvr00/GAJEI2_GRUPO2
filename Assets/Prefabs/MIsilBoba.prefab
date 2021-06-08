@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6730968007745047251}
   - component: {fileID: 8029541830444650284}
   - component: {fileID: 3759155846411472663}
+  - component: {fileID: 8770298443084125440}
   m_Layer: 0
   m_Name: MIsilBoba
   m_TagString: Untagged
@@ -102,3 +103,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8770298443084125440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653223944012743104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2806f4a345f34091631689c69fd0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direccionMisil: {x: 0, y: 0, z: 0}

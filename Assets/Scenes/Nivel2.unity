@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 64959497}
   - component: {fileID: 64959492}
   - component: {fileID: 64959496}
-  - component: {fileID: 64959495}
   - component: {fileID: 64959494}
+  - component: {fileID: 64959495}
   m_Layer: 0
   m_Name: Boba
   m_TagString: Untagged
@@ -203,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64959491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.0645995, y: -1.49, z: 0}
+  m_LocalPosition: {x: -8.44, y: -1.95, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -228,8 +228,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!60 &64959495
-PolygonCollider2D:
+--- !u!61 &64959495
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -238,7 +238,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -251,24 +251,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.13499999, y: 0.015}
-      - {x: 0.095, y: 0.035}
-      - {x: 0.105, y: 0.255}
-      - {x: 0.065, y: 0.315}
-      - {x: -0.085, y: 0.315}
-      - {x: -0.114999995, y: 0.285}
-      - {x: -0.13499999, y: 0.125}
-      - {x: -0.13499999, y: -0.315}
-      - {x: 0.125, y: -0.315}
-      - {x: 0.125, y: -0.125}
-      - {x: 0.13499999, y: -0.105}
-    - - {x: -0.044999998, y: -0.255}
-      - {x: -0.015, y: -0.225}
-      - {x: -0.024999999, y: -0.225}
-      - {x: -0.024999999, y: -0.265}
-      - {x: -0.035, y: -0.255}
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.63}
+  m_EdgeRadius: 0
 --- !u!50 &64959496
 Rigidbody2D:
   serializedVersion: 4
@@ -284,12 +269,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &64959497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +289,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disparoPrefab: {fileID: 9067524169887921417, guid: 186f02f07f10cf845bc14b35aaf100d4, type: 3}
   ondaPrefab: {fileID: 9067524169887921417, guid: 186f02f07f10cf845bc14b35aaf100d4, type: 3}
+  misilPrefab: {fileID: 7653223944012743104, guid: c96dabe18097aab41a4501ce4236ddc7, type: 3}
+  escenario:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &75622004
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +304,7 @@ GameObject:
   - component: {fileID: 75622005}
   - component: {fileID: 75622007}
   - component: {fileID: 75622006}
+  - component: {fileID: 75622008}
   m_Layer: 0
   m_Name: ZonaMuerte (1)
   m_TagString: ZonaMuerte
@@ -413,6 +403,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &75622008
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75622004}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &128400351
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +533,7 @@ GameObject:
   - component: {fileID: 377672894}
   - component: {fileID: 377672893}
   m_Layer: 6
-  m_Name: Square
+  m_Name: suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,7 +546,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377672890}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -587,8 +598,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377672890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.8, y: -3.78, z: 0}
-  m_LocalScale: {x: 62.60125, y: 2.6579, z: 2.6579}
+  m_LocalPosition: {x: 15.8, y: -4.21, z: 0}
+  m_LocalScale: {x: 119.72489, y: 2.6579, z: 2.6579}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -653,11 +664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7510791951374410340, guid: e930b5e4dbb9b884da9ab5fcf9c963d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: 10.97
       objectReference: {fileID: 0}
     - target: {fileID: 7510791951374410340, guid: e930b5e4dbb9b884da9ab5fcf9c963d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.54
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 7510791951374410340, guid: e930b5e4dbb9b884da9ab5fcf9c963d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -773,8 +784,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491867287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.012, y: 0.02, z: 0}
-  m_LocalScale: {x: 2.8734, y: 2.9811525, z: 2.8734}
+  m_LocalPosition: {x: 38.054, y: 0.021731, z: 0}
+  m_LocalScale: {x: 3.3707855, y: 3.49719, z: 3.3707855}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -790,6 +801,7 @@ GameObject:
   - component: {fileID: 586665289}
   - component: {fileID: 586665291}
   - component: {fileID: 586665290}
+  - component: {fileID: 586665292}
   m_Layer: 0
   m_Name: ZonaMuerte (2)
   m_TagString: ZonaMuerte
@@ -888,6 +900,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &586665292
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586665288}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &900190974
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,8 +997,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900190974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.57, y: 0.03, z: 0}
-  m_LocalScale: {x: 2.6705, y: 2.6705, z: 2.6705}
+  m_LocalPosition: {x: -3.6863, y: 0.033461, z: 0}
+  m_LocalScale: {x: 3.1327636, y: 3.1327636, z: 3.1327636}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1063,6 +1096,7 @@ GameObject:
   - component: {fileID: 1051824025}
   - component: {fileID: 1051824027}
   - component: {fileID: 1051824026}
+  - component: {fileID: 1051824028}
   m_Layer: 0
   m_Name: ZonaMuerte (3)
   m_TagString: ZonaMuerte
@@ -1161,6 +1195,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1051824028
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051824024}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1322603639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1298,8 +1353,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400189977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 0, z: 0}
-  m_LocalScale: {x: 2.8734, y: 2.9811525, z: 2.8734}
+  m_LocalPosition: {x: -3.1819, y: -0.0017307, z: 0}
+  m_LocalScale: {x: 3.3707855, y: 3.49719, z: 3.3707855}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1338,6 +1393,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1849961482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849961483}
+  - component: {fileID: 1849961484}
+  m_Layer: 0
+  m_Name: SpawnerSoldados
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849961483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849961482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.6, y: -2.69, z: -31.180075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849961484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849961482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4711370fe8359f040a12a27bbd3bc2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldadosEnemi:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2009942342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,6 +1450,7 @@ GameObject:
   - component: {fileID: 2009942343}
   - component: {fileID: 2009942345}
   - component: {fileID: 2009942344}
+  - component: {fileID: 2009942346}
   m_Layer: 0
   m_Name: ZonaMuerte
   m_TagString: ZonaMuerte
@@ -1447,6 +1549,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2009942346
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009942342}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2018406334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,8 +1646,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018406334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.43, y: 0.02, z: 0}
-  m_LocalScale: {x: 2.8734, y: 2.9811525, z: 2.8734}
+  m_LocalPosition: {x: 17.429, y: 0.021731, z: 0}
+  m_LocalScale: {x: 3.3707855, y: 3.49719, z: 3.3707855}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
