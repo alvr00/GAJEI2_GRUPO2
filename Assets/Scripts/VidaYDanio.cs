@@ -5,9 +5,18 @@ using UnityEngine;
 public class VidaYDanio : MonoBehaviour
 {
     [SerializeField] int vidas = 100;
+    [SerializeField] Animator playerAnims;
 
-    public void RestarVidas(int conatidad)
+    private void Start()
     {
-        vidas -= 20;
+        playerAnims = GetComponent<Animator>();
+    }
+    public void RestarVidas(int cantidad)
+    {
+        vidas -= cantidad ;
+        if (vidas <= 0)
+        {
+            playerAnims.SetTrigger("muerte");
+        }
     }
 }

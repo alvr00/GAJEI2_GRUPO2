@@ -7,15 +7,16 @@ TagManager:
   - misilBoba1
   - Disparo
   - escenario
+  - Findisparos
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - player
   - Water
   - UI
   - escenario
-  - 
+  - enemigos
   - 
   - 
   - 
