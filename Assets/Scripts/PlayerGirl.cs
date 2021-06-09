@@ -23,6 +23,7 @@ public class PlayerGirl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         sR = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         
@@ -33,6 +34,7 @@ public class PlayerGirl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Clampear();
         h = (int)Input.GetAxisRaw("Horizontal"); //-1,011
         if (h == -1)
         {
@@ -54,7 +56,7 @@ public class PlayerGirl : MonoBehaviour
 
             if (CheckGround().Length > 0)
             {
-                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * 11, ForceMode2D.Impulse);
                 anim.SetTrigger("salto");
             }
            
@@ -154,6 +156,12 @@ public class PlayerGirl : MonoBehaviour
             sableCopia.GetComponent<SableBueno>().objetivo = transform.position + new Vector3(-5, 0, 0);
 
         }
+    }
+    private void Clampear()
+    {
+       float xPos = Mathf.Clamp(transform.position.x, -12.83f, 47.68f);
+       float yPos = Mathf.Clamp(transform.position.y, -2.207f, 5.19f);
+       transform.position = new Vector3(xPos, yPos, 0);
     }
 }
 
