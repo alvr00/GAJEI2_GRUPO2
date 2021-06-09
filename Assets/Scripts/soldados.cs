@@ -11,12 +11,14 @@ public class soldados : MonoBehaviour
     Animator anims;
     Rigidbody2D rb;
     [SerializeField] LayerMask capaPlayer;
+    AudioSource aS;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         sR = GetComponent<SpriteRenderer>();
         anims = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        aS = GetComponent<AudioSource>();
         
     }
 
@@ -88,6 +90,8 @@ public class soldados : MonoBehaviour
     public void Disparar()
     {
         Instantiate(disparoPrefab, transform.position + new Vector3 (-0.47f, 0.28f, 0), Quaternion.identity);
+        aS.Play();
+
     }
 
     

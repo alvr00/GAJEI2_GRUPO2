@@ -19,7 +19,7 @@ public class SpawnerSoldados : MonoBehaviour
             for (int j = 0; j < soldados; j++)
             {
                 Instantiate(soldadosEnemi[Random.Range(0, soldadosEnemi.Length)],transform.position, Quaternion.identity);
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(15f);
             }
         }
     }

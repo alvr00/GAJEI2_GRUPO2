@@ -8,6 +8,8 @@ TagManager:
   - Disparo
   - escenario
   - Findisparos
+  - ZonaMuerte
+  - enemigos
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - escenario
   - enemigos
-  - 
+  - boba
   - 
   - 
   - 

@@ -116,6 +116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7405f01278fe9849b04ed5b09ebe394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetivo: {x: 0, y: 0, z: 0}
+  enemigos:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!70 &3341305212024071000
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

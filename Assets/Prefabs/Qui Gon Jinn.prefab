@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 105212546364365742}
   - component: {fileID: 105212546364365741}
   - component: {fileID: 105212546364365740}
+  - component: {fileID: -8220055811569958211}
   - component: {fileID: 105212546364365739}
   - component: {fileID: 105212546364365738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Qui Gon Jinn
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -119,10 +120,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misilPrefab: {fileID: 5287421599701592677, guid: 2cdd26e515be07c44800e5fef7bcb1d2, type: 3}
   anim: {fileID: 105212546364365741}
-  sableVolandoPrefab: {fileID: 0}
   escenario:
     serializedVersion: 2
     m_Bits: 64
+  enemigos:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &-8220055811569958211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105212546364365737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7816bdbd134e24690bf7c4c0e722b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 200
+  playerAnims: {fileID: 105212546364365741}
+  derrota: {fileID: 5410379630276664392, guid: d28292c26e678ba4c9e3da4914f3a6b2, type: 3}
+  vida: {fileID: 726260127535189888, guid: 4d56ac7059b92d047b07df3d86295023, type: 3}
+  vida1: {fileID: 4010842504818558301, guid: e07fa1d7795731c45b7fa19f3c09f9e1, type: 3}
+  vida2: {fileID: 6537423245428168084, guid: ef136c8a226f5d84b9ecb2f202c380eb, type: 3}
+  vida3: {fileID: 1071325462446994673, guid: 5bb1b09aaf4c28242b5291d3cec78c4b, type: 3}
+  vida4: {fileID: 8417755041395179620, guid: 18b43287f1d51ca4ab27cfcd27274d68, type: 3}
+  vida5: {fileID: 2707429755831593486, guid: 49f41920cbfc4e24da6cbd1e294760b2, type: 3}
+  vida6: {fileID: 4595847128046030969, guid: 7d9e653ac446bd14ab045f4e6498c23c, type: 3}
+  vida7: {fileID: 8694164588114568301, guid: ba1342130467ab749beef993e0c80904, type: 3}
+  vida8: {fileID: 0}
 --- !u!50 &105212546364365739
 Rigidbody2D:
   serializedVersion: 4

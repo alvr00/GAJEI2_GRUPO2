@@ -8,14 +8,13 @@ public class PlayerGirl : MonoBehaviour
 
     float velocidad = 8f;
     int h;
-    int vidas = 100;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
     [SerializeField] GameObject sableVolandoPrefab;
     [SerializeField] LayerMask escenario;
-    [SerializeField] Image[] vida;
     SpriteRenderer sR;
     Rigidbody2D rb;
+    [SerializeField] LayerMask enemigos;
 
 
 
@@ -34,7 +33,7 @@ public class PlayerGirl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Clampear();
+        //Clampear();
         h = (int)Input.GetAxisRaw("Horizontal"); //-1,011
         if (h == -1)
         {
@@ -56,7 +55,7 @@ public class PlayerGirl : MonoBehaviour
 
             if (CheckGround().Length > 0)
             {
-                rb.AddForce(Vector2.up * 11, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * 17, ForceMode2D.Impulse);
                 anim.SetTrigger("salto");
             }
            
@@ -78,6 +77,13 @@ public class PlayerGirl : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("atacar" );
+            Collider2D[] colls = Physics2D.OverlapCircleAll(transform.position + new Vector3(sR.flipX ? -1 : 1, 0, 0), 0.5f, enemigos);
+            if (colls.Length >= 0)
+            {
+                colls[0].gameObject.GetComponent<VidaEnemigos>().RestarVidasEnemigos(50);
+                
+            }
+
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -108,19 +114,14 @@ public class PlayerGirl : MonoBehaviour
             anim.SetBool("bloqueando", false);
         }
 
-        if (vidas == 100)
-        {
-
-        }
-
     }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f);
+        Gizmos.DrawSphere(new Vector2(transform.position.x, transform.position.y - 0.9f), 0.4f);
     }
     Collider2D[] CheckGround()
     {
-        Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f, escenario);
+        Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.9f), 0.4f, escenario);
         return colls;
     }
 
@@ -129,7 +130,7 @@ public class PlayerGirl : MonoBehaviour
         if (collision.gameObject.CompareTag("misilBoba1"))
         {
             Destroy(collision.gameObject);
-            vidas -= 25;
+            
             
         }
         if (collision.gameObject.CompareTag("Disparo"))
@@ -137,7 +138,7 @@ public class PlayerGirl : MonoBehaviour
             if(anim.GetBool("bloqueando"))
             {
                 Destroy(collision.gameObject);
-                vidas -= 10;
+                
 
             }
         }

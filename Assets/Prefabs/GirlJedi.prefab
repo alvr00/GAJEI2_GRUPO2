@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 7510791951374410340}
   - component: {fileID: 7510791951374410363}
   - component: {fileID: 7510791951374410341}
+  - component: {fileID: -5282494351465256968}
   - component: {fileID: 7510791951374410342}
   - component: {fileID: 7510791951374410361}
   - component: {fileID: 7510791951374410362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GirlJedi
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7510791951374410343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.93, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 4.15, y: -2.87, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,12 +54,9 @@ MonoBehaviour:
   escenario:
     serializedVersion: 2
     m_Bits: 64
-  vida:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  enemigos:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!212 &7510791951374410341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -110,6 +108,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5282494351465256968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510791951374410343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7816bdbd134e24690bf7c4c0e722b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 200
+  playerAnims: {fileID: 7510791951374410342}
+  derrota: {fileID: 5410379630276664392, guid: d28292c26e678ba4c9e3da4914f3a6b2, type: 3}
+  vida: {fileID: 726260127535189888, guid: 4d56ac7059b92d047b07df3d86295023, type: 3}
+  vida1: {fileID: 4010842504818558301, guid: e07fa1d7795731c45b7fa19f3c09f9e1, type: 3}
+  vida2: {fileID: 6537423245428168084, guid: ef136c8a226f5d84b9ecb2f202c380eb, type: 3}
+  vida5: {fileID: 2707429755831593486, guid: 49f41920cbfc4e24da6cbd1e294760b2, type: 3}
+  vida6: {fileID: 4595847128046030969, guid: 7d9e653ac446bd14ab045f4e6498c23c, type: 3}
 --- !u!95 &7510791951374410342
 Animator:
   serializedVersion: 3
@@ -144,7 +162,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     {
         if(scene.buildIndex == 1)
         {
-            Instantiate(playerPrefab, new Vector3(-7.53f, -3f, 0), Quaternion.identity);
+            Instantiate(playerPrefab, new Vector3(-7.53f, -3.5f, 0), Quaternion.identity);
         }
         if (scene.name.Equals("Nivel2"))
         {
