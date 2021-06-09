@@ -61,6 +61,10 @@ public class player : MonoBehaviour
         }
 
     }
+    /*private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(transform.position + new Vector3(sR.flipX ? -1 : 1, 0, 0), 0.5f);
+    }*/
     Collider2D[] CheckGround()
     {
         Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f, escenario);

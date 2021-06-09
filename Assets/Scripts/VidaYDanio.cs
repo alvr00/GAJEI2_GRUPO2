@@ -17,6 +17,7 @@ public class VidaYDanio : MonoBehaviour
         if (vidas <= 0)
         {
             playerAnims.SetTrigger("muerte");
+            
         }
     }
 }

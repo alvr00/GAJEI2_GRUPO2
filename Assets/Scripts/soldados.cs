@@ -10,6 +10,7 @@ public class soldados : MonoBehaviour
     SpriteRenderer sR;
     Animator anims;
     Rigidbody2D rb;
+    [SerializeField] LayerMask capaPlayer;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -46,9 +47,9 @@ public class soldados : MonoBehaviour
            
 
         }
-        else if (distAPlayer > 2 && distAPlayer < distanciaRandom) //Rango de ataque
+        else if (distAPlayer > 2 && distAPlayer < 5) //Rango de ataque
         {
-            anims.SetBool("andando", true);
+            anims.SetBool("andando", false);
             if (!estaatacando)
                 StartCoroutine(Disparo());
         }
@@ -57,27 +58,26 @@ public class soldados : MonoBehaviour
             StopAllCoroutines();
             estaatacando = false;
             anims.SetBool("andando", false);
-
             anims.SetTrigger("melee");
-        }
-        
-
-        IEnumerator Disparo()
-        {
-            estaatacando = true;
-
-            while (true)
-            {
-                anims.SetTrigger("disparo");
-                Disparar();
-                yield return new WaitForSeconds(2f);
-
-            }
-
+            VidaYDanio scr = gameObject.GetComponent<VidaYDanio>();
+            scr.RestarVidas(5);
         }
 
     }
 
+    IEnumerator Disparo()
+    {
+        estaatacando = true;
+
+        while (true)
+        {
+            anims.SetTrigger("disparo");
+            Disparar();
+            yield return new WaitForSeconds(2f);
+
+        }
+
+    }
     private void Clampear()
     {
         //float xPos = Mathf.Clamp(transform.position.x, -9.33f, 9.41f);
@@ -89,4 +89,6 @@ public class soldados : MonoBehaviour
     {
         Instantiate(disparoPrefab, transform.position + new Vector3 (-0.47f, 0.28f, 0), Quaternion.identity);
     }
+
+    
 }

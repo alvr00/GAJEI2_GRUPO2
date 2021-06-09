@@ -50,33 +50,24 @@ public class SoldadoEscopeta : MonoBehaviour
             if(!estaatacando)
                 StartCoroutine(Disparo());
         }
-        else if (distAPlayer <=  1)
+    }
+    IEnumerator Disparo()
+    {
+        estaatacando = true;
+
+        while (true)
         {
-            StopAllCoroutines();
-            estaatacando = false;
-            anims.SetBool("andando", false);
-
-            anims.SetTrigger("melee");
-        }
-
-        IEnumerator Disparo()
-        {
-            estaatacando = true;
-
-            while (true)
+            anims.SetTrigger("disparo");
+            Vector3 dirAPlayer = (player.transform.position - transform.position).normalized;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dirAPlayer, 2.5f, capaPlayer);
+            if (hit.collider != null)
             {
-                anims.SetTrigger("disparo");
-                Vector3 dirAPlayer = (player.transform.position - transform.position).normalized;
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, dirAPlayer, 2.5f, capaPlayer);
-                if (hit.collider != null)
-                {
-                    VidaYDanio scr = hit.transform.GetComponent<VidaYDanio>();
-                    scr.RestarVidas(danioSoldado);
-                    Debug.Log("au");
-                }
-                yield return new WaitForSeconds(2f);
+                VidaYDanio scr = hit.transform.GetComponent<VidaYDanio>();
+                scr.RestarVidas(danioSoldado);
+                Debug.Log("au");
             }
-
+            yield return new WaitForSeconds(2f);
         }
+
     }
 }

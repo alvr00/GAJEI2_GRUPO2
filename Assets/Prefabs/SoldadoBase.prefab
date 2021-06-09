@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5211723842476403348}
   - component: {fileID: 5211723842476403339}
   - component: {fileID: 5211723842476403336}
-  - component: {fileID: 5211723842476403338}
+  - component: {fileID: 3232401526949198652}
   - component: {fileID: 5211723842476403337}
   m_Layer: 0
   m_Name: SoldadoBase
@@ -153,7 +153,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5211723842476403338
+--- !u!114 &3232401526949198652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anims: {fileID: 5211723842476403348}
-  vidas: 50
+  vidas: 100
 --- !u!114 &5211723842476403337
 MonoBehaviour:
   m_ObjectHideFlags: 0

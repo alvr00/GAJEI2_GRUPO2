@@ -18,6 +18,12 @@ public class VidaEnemigos : MonoBehaviour
         if (vidas <= 0)
         {
             anims.SetTrigger("muerte");
+            
         }
+    }
+
+    public void Desaparecer()
+    {
+        Destroy(gameObject);
     }
 }
