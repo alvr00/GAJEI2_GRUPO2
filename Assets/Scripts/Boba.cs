@@ -93,6 +93,7 @@ public class Boba : MonoBehaviour
             anims.SetBool("andando", false);
 
             anims.SetTrigger("golpeCerca");
+
         }
     }
     private void FixedUpdate() //0.02s
@@ -157,9 +158,9 @@ public class Boba : MonoBehaviour
 
     private void Clampear()
     {
-        //float xPos = Mathf.Clamp(transform.position.x, -9.33f, 9.41f);
-        //float yPos = Mathf.Clamp(transform.position.y, -4.14f, 4.26f);
-        //transform.position = new Vector3(xPos, yPos, 0);
+        float xPos = Mathf.Clamp(transform.position.x, -12.9f, 47.80f);
+        float yPos = Mathf.Clamp(transform.position.y, -1.98f, 4.88f);
+        transform.position = new Vector3(xPos, yPos, 0);
     }
 
     public void DispararOnda()

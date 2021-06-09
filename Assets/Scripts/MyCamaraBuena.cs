@@ -8,6 +8,7 @@ public class MyCamaraBuena : MonoBehaviour
     
     private void Start()
     {
+       
         player = GameObject.FindGameObjectWithTag("Player");
     }
     private void Update()
@@ -19,4 +20,6 @@ public class MyCamaraBuena : MonoBehaviour
         float yPos = Mathf.Clamp(transform.position.y, 0.67f, 1.85f);
         transform.position = new Vector3(transform.position.x, yPos, -10);
     }
+
+  
 }
