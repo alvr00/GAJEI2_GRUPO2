@@ -5,10 +5,12 @@ using UnityEngine;
 public class SoldadoEscopeta : MonoBehaviour
 {
     GameObject player;
-    bool estaatacando;
+    bool estaatacando = false;
     SpriteRenderer sR;
     Animator anims;
     Rigidbody2D rb;
+    int danioSoldado = 20;
+    [SerializeField] LayerMask capaPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,32 +47,27 @@ public class SoldadoEscopeta : MonoBehaviour
         else if (distAPlayer > 1 && distAPlayer < 3) //Rango de ataque
         {
             anims.SetBool("andando", false);
-            estaatacando = true;
-            if (estaatacando)
-            {
+            if(!estaatacando)
                 StartCoroutine(Disparo());
-            }
         }
-        else if (distAPlayer <=  1)
+    }
+    IEnumerator Disparo()
+    {
+        estaatacando = true;
+
+        while (true)
         {
-            StopAllCoroutines();
-            estaatacando = false;
-            anims.SetBool("andando", false);
-
-            anims.SetTrigger("melee");
-        }
-
-        IEnumerator Disparo()
-        {
-            estaatacando = true;
-
-            while (true)
+            anims.SetTrigger("disparo");
+            Vector3 dirAPlayer = (player.transform.position - transform.position).normalized;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dirAPlayer, 2.5f, capaPlayer);
+            if (hit.collider != null)
             {
-                anims.SetTrigger("disparo");
-                //Raycast
-                yield return new WaitForSeconds(2f);
+                VidaYDanio scr = hit.transform.GetComponent<VidaYDanio>();
+                scr.RestarVidas(danioSoldado);
+                Debug.Log("au");
             }
-
+            yield return new WaitForSeconds(2f);
         }
+
     }
 }

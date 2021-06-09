@@ -18,7 +18,8 @@ public class MyCamaraBuena : MonoBehaviour
     {
         transform.position = player.transform.position + new Vector3(0, 3f, -10);
         float yPos = Mathf.Clamp(transform.position.y, 0.67f, 1.85f);
-        transform.position = new Vector3(transform.position.x, yPos, -10);
+        float xPos = Mathf.Clamp(transform.position.x, -20.64f, 141.69f);
+        transform.position = new Vector3(xPos, yPos, -10);
     }
 
   

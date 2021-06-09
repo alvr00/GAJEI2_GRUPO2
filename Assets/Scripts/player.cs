@@ -9,8 +9,8 @@ public class player : MonoBehaviour
     int h;
     [SerializeField] GameObject misilPrefab;
     [SerializeField] Animator anim;
-    [SerializeField] GameObject sableVolandoPrefab;
     [SerializeField] LayerMask escenario;
+    [SerializeField] LayerMask enemigos;
     SpriteRenderer sR;
     Rigidbody2D rb;
 
@@ -40,7 +40,7 @@ public class player : MonoBehaviour
         {
             if (CheckGround().Length > 0)
             {               
-                rb.AddForce(Vector2.up * 13, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * 17, ForceMode2D.Impulse);
                 anim.SetBool("jumping", true);
             }
         }
@@ -53,13 +53,18 @@ public class player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("atacar" + Random.Range(0, 2));
+            Collider2D[] colls = Physics2D.OverlapCircleAll(transform.position + new Vector3(sR.flipX ? -1 : 1, 0, 0), 0.5f, enemigos);
+            if (colls.Length >= 0)
+            {
+                colls[0].gameObject.GetComponent<VidaEnemigos>().RestarVidasEnemigos(50);
+            }
         }
 
     }
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f);
-    }
+        Gizmos.DrawSphere(transform.position + new Vector3(sR.flipX ? -1 : 1, 0, 0), 0.5f);
+    }*/
     Collider2D[] CheckGround()
     {
         Collider2D[] colls = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y - 0.7f), 0.2f, escenario);
